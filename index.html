@@ -33,6 +33,7 @@
       if (window.location.search) {
          if (document.cookie.indexOf("doRedirect=false") === -1) {
             window.location.replace("https://kcak11.page.link/" + window.location.search.substr(1));
+            setTimeout(function(){window.close();},5000);
          }
       } else {
          document.cookie = "doRedirect=false;path=/";
