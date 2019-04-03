@@ -32,12 +32,12 @@
    <script type="text/javascript">
       if (window.location.search) {
          if (document.cookie.indexOf("doRedirect=false") === -1) {
-            window.open("https://kcak11.page.link/" + window.location.search.substr(1), "_blank");
-            try {
+            window.location.assign("https://kcak11.page.link/" + window.location.search.substr(1));
+            /*try {
                setTimeout(function() {
                   window.close();
                }, 5000);
-            } catch (exjs) {}
+            } catch (exjs) {}*/
          }
       } else {
          document.cookie = "doRedirect=false;path=/";
