@@ -38,7 +38,7 @@
          document.cookie = "doRedirect=false;path=/";
          document.querySelector(".resetBtn").style.display = "block";
       }
-      document.querySelector("body").onbeforeunload = function(){};
+      window.onbeforeunload = function(){};
    </script>
 </body>
 
